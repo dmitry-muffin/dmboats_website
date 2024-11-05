@@ -1,15 +1,14 @@
-//package controllers;
-//
-//import org.springframework.stereotype.Controller;
-////import org.springframework.ui.Model;
-//import org.springframework.web.bind.annotation.GetMapping;
-//
-//
-//@Controller
-//public class Viking_4_6_Controller {
-//    @GetMapping("/viking")
-//    public String vik_4_6() {
-//        System.out.println("Метод контроллера /viking вызван!");
-//        return "viking";
-//    }
-//}
+package com.dmboats.dmboats_website.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+
+@Controller
+public class Viking_4_6_Controller {
+    @GetMapping("/viking_4_6")
+    public String viking_4_6(Model model) {
+        return "viking_4_6";
+    }
+}
