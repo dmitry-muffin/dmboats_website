@@ -11,13 +11,11 @@ public class MainPageController {
 
     @GetMapping("/")
     public String home(Model model) {
-        System.out.println("test1");
         return "home";
     }
 
     @GetMapping("/viking_4_6")
-    public String vik_4_6(Model model) {
-        System.out.println("Метод контроллера /viking вызван!");
+    public String viking_4_6(Model model) {
         return "viking_4_6";
     }
 
