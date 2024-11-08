@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 
 @Controller
-public class MainPageController {
+public class DMB_Aparel_Controller {
 
-    @GetMapping("/")
-    public String home(Model model) {
-        return "home";
+    @GetMapping("/aparel")
+    public String aparel(Model model) {
+        return "aparel";
     }
 
 }
