@@ -12,19 +12,18 @@
       font-family: 'Exo 2', sans-serif;
       font-size: larger;
     }
+    body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
     :root {
       --carousel-photo-spacing: 20px; /* Отступ между каруселью и блоком фото с таблицей */
       --photo-table-spacing: 20px;    /* Отступ между фото и таблицей */
     }
 
-    .hero-section {
-      background-image: url('/images/background.jpg');
-      background-size: cover;
-      background-position: center;
-      color: #fff;
-      padding: 800px 0;
-      text-align: center;
-    }
+
 
     #photoCarousel .carousel-item img {
       width: 100%;
@@ -86,7 +85,25 @@
       color: #fff;
       padding: 20px;
       text-align: center;
+      width: 100%; /* Чтобы футер занимал всю ширину */
+      position: relative; /* Для закрепления футера внизу страницы */
+      bottom: 0; /* Если футер должен быть внизу */
     }
+
+    .footer a {
+      color: inherit; /* Ссылки не будут синими */
+      text-decoration: none; /* Убираем подчеркивание */
+    }
+
+    .nav-link {
+      text-decoration: none; /* Убираем подчеркивание у ссылок */
+      color: inherit; /* Ссылки не будут синими */
+    }
+
+    .nav-link:hover {
+      color: inherit; /* При наведении цвет ссылки остается прежним */
+    }
+
     .price_comp{
       font-size: larger;
 

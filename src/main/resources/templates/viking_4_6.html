@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Применяем шрифт Exo 2 */
+        body, .nav-link {
+            font-family: 'Exo 2', sans-serif;
+            font-size: larger;
+        }
+
+        /* Фоновое изображение */
+        .hero-section {
+            background-image: url('/images/background.jpg'); /* Путь к вашему фоновому изображению */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 800px 0;
+            text-align: center;
+        }
+
+        /* Блоки с преимуществами */
+        .features {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .feature-item {
+            padding: 20px;
+        }
+
+        .feature-item img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 15px;
+        }
+
+        /* Нижний блок */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Настройка смещения логотипа */
+        .logo {
+            transform: translateX(0px);
+        }
+
+        .content-block {
+            border: 2px solid #333; /* Окантовка */
+            border-radius: 10px;   /* Скругление углов */
+            padding: 20px;
+        }
+
+        #photoCarousel .carousel-item img {
+            width: 100%;       /* Ширина по всей ширине контейнера */
+            height: 700px;     /* Устанавливаем фиксированную высоту */
+            object-fit: cover  ; /* Обрезаем изображение, чтобы оно заполнило контейнер */
+        }
+
+    </style>
+</head>
+<body>
+
+<header class="border-bottom">
+    <div class="d-flex flex-wrap justify-content-between align-items-center py-3 container">
+        <ul class="nav me-auto">
+<!--            <li class="nav-item"><a href="/viking_4_1" class="nav-link px-2 link-dark">Viking 4.1 </a></li>-->
+            <li class="nav-item"><a href="/viking_4_6" class="nav-link px-2 link-dark">Viking 4.6 </a></li>
+            <li class="nav-item"><a href="/aparel" class="nav-link px-2 link-dark">Лодки для работы </a></li>
+        </ul>
+
+        <a href="/" class="d-flex align-items-center text-decoration-none mx-auto logo">
+            <img src="/images/logo.png" alt="Viking Logo" width="320" height="50">
+        </a>
+
+        <ul class="nav ms-auto">
+            <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">Новости</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">Контакты</a></li>
+        </ul>
+    </div>
+</header>
+
+
+<!-- Карусель -->
+<div id="photoCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <!-- Первый слайд -->
+        <div class="carousel-item active">
+            <img src="/images/viking_4_6/photo1.jpg" class="d-block w-100" alt="Фото 1">
+        </div>
+        <!-- Второй слайд -->
+        <div class="carousel-item">
+            <img src="/images/viking_4_6/photo2.jpg" class="d-block w-100" alt="Фото 2">
+        </div>
+        <!-- Третий слайд -->
+        <div class="carousel-item">
+            <img src="/images/viking_4_6/photo3.jpg" class="d-block w-100" alt="Фото 3">
+        </div>
+        <div class="carousel-item">
+            <img src="/images/viking_4_6/photo4.jpg" class="d-block w-100" alt="Фото 4">
+        </div>
+        <div class="carousel-item">
+            <img src="/images/viking_4_6/photo5.jpg" class="d-block w-100" alt="Фото 5">
+        </div>
+    </div>
+    <!-- Элементы управления каруселью -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#photoCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+<div class="container-fluid d-md-flex w-100 my-md-3 ps-md-3">
+    <!-- Блок с лодкой для отдыха -->
+    <div class="content-block text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden flex-fill">
+        <div class="my-3 py-3">
+            <h2 class="display-5">Лодка для отдыха</h2>
+            <p class="lead">Viking 4.6 BR</p>
+            <!-- Изображение лодки для отдыха -->
+            <img src="/images/viking_4_6/photo4.jpg" alt="Viking 4.6 BR" class="img-fluid my-3" style="border-radius: 15px; width: 100%; max-height: 300px; object-fit: cover;">
+            <!-- Список особенностей -->
+            <ul class="text-start mx-auto" style="max-width: 80%;">
+                <li>Просторный салон</li>
+                <li>Комфортные сиденья</li>
+                <li>Устойчивость на воде</li>
+                <li>Система хранения вещей</li>
+                <li>Дизайн для отдыха</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Блок с лодкой для рыбалки -->
+    <div class="content-block bg-body-tertiary ms-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden flex-fill">
+        <div class="my-3 py-3">
+            <a href="/viking_4_6_f" class="display-5 text-dark text-decoration-none">Лодка для рыбалки</a>
+            <p class="lead">Viking 4.6 F</p>
+            <!-- Изображение лодки для рыбалки -->
+            <img src="/images/viking_4_6/photo5.jpg" alt="Viking 4.6 F" class="img-fluid my-3" style="border-radius: 15px; width: 100%; max-height: 300px; object-fit: cover;">
+            <!-- Список особенностей -->
+            <ul class="text-start mx-auto" style="max-width: 80%;">
+                <li>Прочная конструкция для рыбалки</li>
+                <li>Удобные сиденья</li>
+                <li>Большое место для хранения улова</li>
+                <li>Устойчивая платформа</li>
+                <li>Дополнительные держатели для удочек</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+<!-- Нижний блок -->
+<footer class="footer">
+    <div>
+        <a href="#">Лодочные моторы</a> |
+        <a href="#">Лодочный сервис</a>
+    </div>
+    <p>&copy; All Rights Reserved. Acme Design Co. <br> hello@mysite.com</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
