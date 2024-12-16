@@ -1,5 +1,6 @@
-package com.dmboats.dmboats_website;
+package com.dmboats.dmboats_website.mail_service;
 
+import com.dmboats.dmboats_website.mail_service.ContactFormDto;
 import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeMessage;
 import lombok.RequiredArgsConstructor;

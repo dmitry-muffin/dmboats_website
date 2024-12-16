@@ -1,10 +1,11 @@
-package com.dmboats.dmboats_website;
+package com.dmboats.dmboats_website.mail_service;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
 @Data
-public class ContactFormDto {
+public class
+ContactFormDto {
 
     // Поле услуги (обязательно)
     @NotBlank(message = "Услуга обязательна")

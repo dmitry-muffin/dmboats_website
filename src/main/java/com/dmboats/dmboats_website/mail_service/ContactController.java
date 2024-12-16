@@ -1,7 +1,5 @@
-package com.dmboats.dmboats_website.controllers;
+package com.dmboats.dmboats_website.mail_service;
 
-import com.dmboats.dmboats_website.ContactFormDto;
-import com.dmboats.dmboats_website.EmailService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
