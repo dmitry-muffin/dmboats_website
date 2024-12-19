@@ -317,6 +317,10 @@
             <input type="tel" id="phoneInput" class="form-control" placeholder="+7 (___) ___-____">
           </div>
           <div class="mb-3">
+            <label for="emailInput" class="form-label">Email</label>
+            <input type="text" id="emailInput" class="form-control" placeholder="Ваш email">
+          </div>
+          <div class="mb-3">
             <label for="cityInput" class="form-label">Город</label>
             <input type="text" id="cityInput" class="form-control" placeholder="Ваш город">
           </div>
@@ -486,6 +490,7 @@
       service: document.getElementById('serviceSelect').value,
       name: document.getElementById('nameInput').value,
       phone: document.getElementById('phoneInput').value,
+      email: document.getElementById('emailInput').value,
       city: document.getElementById('cityInput').value,
     };
 

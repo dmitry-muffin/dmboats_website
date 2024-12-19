@@ -28,10 +28,11 @@ public class EmailService {
 
             // Установка текста письма в HTML-формате
             String messageContent = String.format(
-                    "<p>Услуга: %s</p><p>Имя отправителя: %s</p><p>Телефон: %s</p><p>Город: %s</p>",
+                    "<p>Комплектация: %s</p><p>Имя отправителя: %s</p><p>Телефон: %s</p><p>Email: %s</p><p>Город: %s</p>",
                     contactForm.getService(),
                     contactForm.getName(),
                     contactForm.getPhone() != null ? contactForm.getPhone() : "Не указан",
+                    contactForm.getEmail() != null ? contactForm.getEmail() : "Не указан",
                     contactForm.getCity() != null ? contactForm.getCity() : "Не указан"
             );
 

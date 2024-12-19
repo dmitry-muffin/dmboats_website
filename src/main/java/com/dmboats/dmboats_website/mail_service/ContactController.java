@@ -20,6 +20,7 @@ public class ContactController {
         System.out.println("Получено услуга: " + contactForm.getService());
         System.out.println("Получено имя: " + contactForm.getName());
         System.out.println("Получен телефон: " + contactForm.getPhone());
+        System.out.println("Получен email: " + contactForm.getEmail());
         System.out.println("Получен город: " + contactForm.getCity());
 
         // Отправляем email с данными из формы

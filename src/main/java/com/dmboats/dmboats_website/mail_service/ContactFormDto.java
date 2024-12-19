@@ -18,6 +18,8 @@ ContactFormDto {
     // Поле телефона (не обязательно)
     private String phone;
 
+    private String email;
+
     // Поле города (не обязательно)
     private String city;
 }
