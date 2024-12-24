@@ -10,7 +10,7 @@
     /* Применяем шрифт Exo 2 */
     body, .nav-link {
       font-family: 'Exo 2', sans-serif;
-      font-size: medium;
+      font-size: larger;
     }
     body, html {
       height: 100%;
@@ -219,7 +219,7 @@
     }
 
     /* Пользовательские медиа-запросы для улучшения адаптивности */
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
       header .container {
         flex-wrap: wrap; /* Элементы в несколько строк */
         flex-direction: column; /* Переключение в столбик */
@@ -239,6 +239,35 @@
       .logo img {
         max-width: 100px; /* Уменьшение логотипа */
       }
+
+      .main-container {
+        flex-direction: column; /* Размещаем элементы в столбик */
+        gap: 0; /* Убираем горизонтальный отступ */
+      }
+
+      .left-container, .right-container {
+        flex: 0 0 auto; /* Убираем фиксированную ширину */
+        width: 100%; /* Занимаем всю ширину */
+      }
+
+      #photoCarousel .carousel-item img {
+        height: auto; /* Адаптируем высоту изображений в карусели */
+      }
+
+      .photo-block {
+        margin-top: var(--carousel-photo-spacing); /* Отступ сверху */
+        height: auto; /* Автоматическая высота */
+      }
+
+      .photo-block img {
+        object-fit: contain; /* Сохраняем пропорции изображения */
+        height: auto;
+      }
+
+      .table-container {
+        /*margin-top: var(--photo-table-spacing); !* Добавляем отступ сверху *!*/
+      }
+
     }
   </style>
 </head>
@@ -514,7 +543,7 @@
       <iframe width="100%" height="315" src="https://rutube.ru/play/embed/bd8b2e0109e9ea31c4637b96b590f2f7//" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
-
+</div>
 <!-- Нижний блок -->
 <footer class="footer">
 
@@ -523,7 +552,7 @@
 
   <p>&copy; All Rights Reserved. Acme Design Co. <br> hello@mysite.com</p>
 </footer>
-</div>
+
 <script>
   document.getElementById('submitRequestButton').addEventListener('click', async () => {
     const formData = {

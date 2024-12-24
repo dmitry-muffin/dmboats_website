@@ -12,30 +12,11 @@
             font-size: larger;
         }
 
-        /* Фоновое изображение */
-        .hero-section {
-            background-image: url('/images/background.jpg'); /* Путь к вашему фоновому изображению */
-            background-size: cover;
-            background-position: center;
-            color: #fff;
-            padding: 800px 0;
-            text-align: center;
-        }
-
-        /* Блоки с преимуществами */
-        .features {
-            padding: 50px 0;
-            text-align: center;
-        }
-
         .features h2 {
             font-size: 2rem;
             margin-bottom: 30px;
         }
 
-        .feature-item {
-            padding: 20px;
-        }
 
         .feature-item img {
             width: 50px;
@@ -57,9 +38,42 @@
             margin: 0 10px;
         }
 
-        /* Настройка смещения логотипа */
-        .logo {
-            transform: translateX(-50px);
+        header .header-menu {
+            display: flex;
+            flex-grow: 1; /* Занять равное пространство */
+            justify-content: flex-start; /* Выравнивание меню к краям */
+        }
+
+        header .header-menu:last-of-type {
+            justify-content: flex-end; /* Правое меню выравнивается вправо */
+        }
+
+        header .logo {
+            margin: 0 20px; /* Отступ между логотипом и меню */
+        }
+
+
+        /* Пользовательские медиа-запросы для улучшения адаптивности */
+        @media (max-width: 900px) {
+            header .container {
+                flex-wrap: wrap; /* Элементы в несколько строк */
+                flex-direction: column; /* Переключение в столбик */
+                align-items: center; /* Центровка элементов */
+                text-align: center;
+            }
+
+            header .nav {
+                flex-direction: column; /* Меню располагается в столбик */
+                width: 100%; /* Ширина по всей строке */
+            }
+
+            header .nav-link {
+                padding: 10px 0; /* Дополнительные отступы между пунктами меню */
+            }
+
+            .logo img {
+                max-width: 100px; /* Уменьшение логотипа */
+            }
         }
 
         .content-block {
