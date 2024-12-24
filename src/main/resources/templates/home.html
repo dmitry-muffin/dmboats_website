@@ -40,10 +40,41 @@
             margin: 0 10px;
         }
 
+        header .header-menu {
+            display: flex;
+            flex-grow: 1; /* Занять равное пространство */
+            justify-content: flex-start; /* Выравнивание меню к краям */
+        }
+
+        header .header-menu:last-of-type {
+            justify-content: flex-end; /* Правое меню выравнивается вправо */
+        }
+
+        header .logo {
+            margin: 0 20px; /* Отступ между логотипом и меню */
+        }
+
+
         /* Пользовательские медиа-запросы для улучшения адаптивности */
         @media (max-width: 768px) {
+            header .container {
+                flex-wrap: wrap; /* Элементы в несколько строк */
+                flex-direction: column; /* Переключение в столбик */
+                align-items: center; /* Центровка элементов */
+                text-align: center;
+            }
+
+            header .nav {
+                flex-direction: column; /* Меню располагается в столбик */
+                width: 100%; /* Ширина по всей строке */
+            }
+
+            header .nav-link {
+                padding: 10px 0; /* Дополнительные отступы между пунктами меню */
+            }
+
             .logo img {
-                width: 200px; /* Уменьшение размера логотипа на небольших экранах */
+                max-width: 100px; /* Уменьшение логотипа */
             }
 
             .hero-section {
@@ -58,22 +89,21 @@
     </style>
 </head>
 <body>
-
 <header class="border-bottom">
-    <div class="container d-flex flex-wrap justify-content-between align-items-center py-3">
+    <div class="container d-flex align-items-center py-3">
         <!-- Левое меню -->
-        <ul class="nav me-auto">
+        <ul class="nav header-menu d-flex flex-column flex-md-row align-items-center mb-2 mb-md-0">
             <li class="nav-item"><a href="/viking_4_6" class="nav-link px-2 link-dark">Viking 4.6</a></li>
             <li class="nav-item"><a href="/aparel" class="nav-link px-2 link-dark">Лодки для работы</a></li>
         </ul>
 
         <!-- Логотип -->
-        <a href="/" class="d-flex align-items-center text-decoration-none mx-auto logo">
-            <img src="/images/logo.png" alt="Viking Logo" class="img-fluid" style="max-width: 80%; height: auto; max-height: 40px;">
+        <a href="/" class="d-flex align-items-center justify-content-center logo mb-2 mb-md-0">
+            <img src="/images/logo.png" alt="Viking Logo" class="img-fluid" style="max-width: 200px; height: auto;">
         </a>
 
         <!-- Правое меню -->
-        <ul class="nav ms-auto">
+        <ul class="nav header-menu d-flex flex-column flex-md-row align-items-center">
             <li class="nav-item"><a href="/news" class="nav-link px-2 link-dark">Галерея</a></li>
             <li class="nav-item"><a href="/about" class="nav-link px-2 link-dark">Контакты</a></li>
         </ul>

@@ -10,7 +10,7 @@
     /* Применяем шрифт Exo 2 */
     body, .nav-link {
       font-family: 'Exo 2', sans-serif;
-      font-size: larger;
+      font-size: medium;
     }
     body, html {
       height: 100%;
@@ -29,7 +29,7 @@
       width: 100%;
       border-radius: 5px;
       height: 600px;
-      object-fit: cover;
+      object-fit: contain;
     }
 
     .main-container {
@@ -59,7 +59,7 @@
     .photo-block img {
       width: 100%;
       height: 100%; /* Фото занимает весь блок */
-      object-fit: cover; /* Сохраняем соотношение сторон, подстраиваясь под блок */
+      object-fit: contain; /* Сохраняем соотношение сторон, подстраиваясь под блок */
     }
 
     .tablepress {
@@ -201,23 +201,63 @@
     .btn-primary:hover {
       background-color: #ac2925;
     }
+    header .header-menu {
+      display: flex;
+      flex-grow: 1; /* Занять равное пространство */
+      justify-content: flex-start; /* Выравнивание меню к краям */
+    }
 
+    header .header-menu:last-of-type {
+      justify-content: flex-end; /* Правое меню выравнивается вправо */
+    }
+
+    header .logo {
+      margin: 0 20px; /* Отступ между логотипом и меню */
+    }
+    footer{
+      width: 100%;
+    }
+
+    /* Пользовательские медиа-запросы для улучшения адаптивности */
+    @media (max-width: 768px) {
+      header .container {
+        flex-wrap: wrap; /* Элементы в несколько строк */
+        flex-direction: column; /* Переключение в столбик */
+        align-items: center; /* Центровка элементов */
+        text-align: center;
+      }
+
+      header .nav {
+        flex-direction: column; /* Меню располагается в столбик */
+        width: 100%; /* Ширина по всей строке */
+      }
+
+      header .nav-link {
+        padding: 10px 0; /* Дополнительные отступы между пунктами меню */
+      }
+
+      .logo img {
+        max-width: 100px; /* Уменьшение логотипа */
+      }
+    }
   </style>
 </head>
 <body>
 
 <header class="border-bottom">
-  <div class="d-flex flex-wrap justify-content-between align-items-center py-3 container">
+  <div class="container d-flex flex-wrap justify-content-between align-items-center py-3">
+    <!-- Левое меню -->
     <ul class="nav me-auto">
-      <!--            <li class="nav-item"><a href="/viking_4_1" class="nav-link px-2 link-dark">Viking 4.1 </a></li>-->
-      <li class="nav-item"><a href="/viking_4_6" class="nav-link px-2 link-dark">Viking 4.6 </a></li>
-      <li class="nav-item"><a href="/aparel" class="nav-link px-2 link-dark">Лодки для работы </a></li>
+      <li class="nav-item"><a href="/viking_4_6" class="nav-link px-2 link-dark">Viking 4.6</a></li>
+      <li class="nav-item"><a href="/aparel" class="nav-link px-2 link-dark">Лодки для работы</a></li>
     </ul>
 
+    <!-- Логотип -->
     <a href="/" class="d-flex align-items-center text-decoration-none mx-auto logo">
-      <img src="/images/logo.png" alt="Viking Logo" width="320" height="50">
+      <img src="/images/logo.png" alt="Viking Logo" class="img-fluid" style="max-width: 80%; height: auto; max-height: 40px;">
     </a>
 
+    <!-- Правое меню -->
     <ul class="nav ms-auto">
       <li class="nav-item"><a href="/news" class="nav-link px-2 link-dark">Галерея</a></li>
       <li class="nav-item"><a href="/about" class="nav-link px-2 link-dark">Контакты</a></li>
@@ -477,10 +517,10 @@
 
 <!-- Нижний блок -->
 <footer class="footer">
-  <div>
+
     <a href="#">Лодочные моторы</a> |
     <a href="#">Лодочный сервис</a>
-  </div>
+
   <p>&copy; All Rights Reserved. Acme Design Co. <br> hello@mysite.com</p>
 </footer>
 </div>
