@@ -25,7 +25,6 @@
     }
 
 
-
     #photoCarousel .carousel-item img {
       width: 100%;
       border-radius: 5px;
@@ -39,11 +38,11 @@
     }
 
     .left-container {
-      flex: 0 0 60%;
+      flex: 0 0 59%;
     }
 
     .right-container {
-      flex: 0 0 40%;
+      flex: 0 0 39%;
     }
 
     .carousel-text {
@@ -115,8 +114,18 @@
     }
     .img-fluid {
       width: 100%;
-      height: 200px;
+      height: auto;
       object-fit: cover;
+      margin-bottom: 10px ;
+    }
+
+    .img-fluid-c {
+      width: 200px;
+      height: auto;
+      object-fit: cover;
+      max-height: 200px;
+      margin-left: 100px;
+      margin-bottom: 10px ;
     }
 
     .content-block {
@@ -271,6 +280,13 @@
         flex: 0 0 auto; /* Убираем фиксированную ширину */
         width: 100%; /* Занимаем всю ширину */
       }
+      .rich-package{
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .poor-package{
+        width: 100%;
+      }
 
     }
 
@@ -417,40 +433,133 @@
       <!-- Изображение лодки для отдыха -->
       <img src="/images/viking_4_6/photo6.jpg" alt="Viking 4.6 BR" class="img-fluid my-3">
       <!-- Список характеристик с раскрывающимися элементами -->
-      <ul>
-        <li>
+      <ul id="rich-package-list">
+        <li id="rich-item1">
           <details>
-            <summary style="font-size: 1.25rem; font-weight: bold;">Характеристика 1</summary>
-            <p>Длина наибольшая: 5,0 м</p>
-            <img src="/images/viking_4_6/photo1.jpg" alt="Характеристика 1" class="img-fluid">
+            <summary style="font-size: 1.25rem; font-weight: bold;">Корпус</summary>
+            <p>Морской алюминий 5083/АМг5 (алюминиево-магниевый сплав)</p>
+            <img src="/images/viking_4_6/f_pack/rp1.jpg" alt="Характеристика 1" class="img-fluid-c" >
+
+            <p>Порошковая краска корпуса металлик</p>
+            <img src="/images/viking_4_6/f_pack/rp2.jpg" alt="Характеристика 1" class="img-fluid-c">
+
+            <p>Палубное покрытие – MariDeck</p>
+            <img src="/images/viking_4_6/f_pack/rp3.jpg" alt="Характеристика 1" class="img-fluid-c">
+
+            <p>Оригинальное каленое стекло в мощной алюминиевой раме</p>
+            <img src="/images/viking_4_6/f_pack/rp4.jpg" alt="Характеристика 1" class="img-fluid-c" >
+
+            <p>Привальный планширь с Т-пазом</p>
+            <img src="/images/viking_4_6/f_pack/rp5.jpg" alt="Характеристика 1" class="img-fluid-c">
+
+            <p>Площадка для Т-паза</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 1" class="img-fluid-c">
+
+            <p>Отделка бортов кокпита SYNTEC</p>
+            <img src="/images/viking_4_6/f_pack/rp6.jpg" alt="Характеристика 1" class="img-fluid-c" >
+
+            <p>Кормовой трапик</p>
+            <img src="/images/viking_4_6/f_pack/rp7.jpg" alt="Характеристика 1" class="img-fluid-c">
+
+            <p>Вентиляция</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 1" class="img-fluid-c">
+
+            <p>Осушительная система</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 1" class="img-fluid-c" >
+
+            <p>Покрытие ЭВА -премиум (6мм)</p>
+            <img src="/images/viking_4_6/f_pack/rp8.png" alt="Характеристика 1" class="img-fluid-c">
+
+            <p>Рундуки</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 1" class="img-fluid-c">
           </details>
         </li>
-        <li>
+        <li id="rich-item2">
           <details>
-            <summary style="font-size: 1.25rem; font-weight: bold;">Характеристика 2</summary>
-            <p>Материал корпуса: АМг5М</p>
-            <img src="/images/viking_4_6/photo2.jpg" alt="Характеристика 2" class="img-fluid">
+            <summary style="font-size: 1.25rem; font-weight: bold;">Рулевое</summary>
+            <p>Улучшенный рулевой штурвал</p>
+            <img src="/images/viking_4_6/f_pack/rp13.jpg" alt="Характеристика 2" class="img-fluid-c" >
+
+            <p>Рулевая система: Редуктор, Трос</p>
+            <img src="/images/viking_4_6/f_pack/rp14.jpg" alt="Характеристика 2" class="img-fluid-c">
           </details>
         </li>
-        <li>
+        <li id="rich-item3">
           <details>
-            <summary style="font-size: 1.25rem; font-weight: bold;">Характеристика 3</summary>
-            <p>Максимальная скорость: 65 км/ч</p>
-            <img src="/images/viking_4_6/photo3.jpg" alt="Характеристика 3" class="img-fluid">
+            <summary style="font-size: 1.25rem; font-weight: bold;">Топливная система</summary>
+            <p>Топливный бак 55 литров</p>
+            <img src="/images/viking_4_6/f_pack/rp15.jpg" alt="Характеристика 3" class="img-fluid-c" >
+
+            <p>Датчик уровня топлива</p>
+            <img src="/images/viking_4_6/f_pack/rp16.jpg" alt="Характеристика 3" class="img-fluid-c">
+
+            <p>Указатель уровня топлива</p>
+            <img src="/images/viking_4_6/f_pack/rp17.jpg" alt="Характеристика 3" class="img-fluid-c" >
+
+            <p>Топливный фильтр-сепаратор</p>
+            <img src="/images/viking_4_6/f_pack/rp18.jpg" alt="Характеристика 3" class="img-fluid-c">
+
+            <p>Заливная горловина из нержавеющей стали</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 3" class="img-fluid-c" >
           </details>
         </li>
-        <li>
+        <li id="rich-item4">
           <details>
-            <summary style="font-size: 1.25rem; font-weight: bold;">Характеристика 4</summary>
-            <p>Пассажировместимость: 5 человек</p>
-            <img src="/images/viking_4_6/photo4.jpg" alt="Характеристика 4" class="img-fluid">
+            <summary style="font-size: 1.25rem; font-weight: bold;">Система электропитания</summary>
+            <p>Трюмная помпа</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 4" class="img-fluid-c" >
+
+            <p>Ходовые огни</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 4" class="img-fluid-c">
+
+            <p>Клотиковый огонь</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 4" class="img-fluid-c" >
+
+            <p>Звуковой сигнал (горн)</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 4" class="img-fluid-c">
+
+            <p>Аккумуляторная батарея</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 4" class="img-fluid-c" >
+
+            <p>Кнопки панели управления: 6</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 4" class="img-fluid-c" >
+
+            <p>Розетки электропитания в т.ч. USB:</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 4" class="img-fluid-c">
+
+            <p>Подсветка в кокпите:</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 4" class="img-fluid-c" >
           </details>
         </li>
-        <li>
+
+        <li id="rich-item5">
           <details>
-            <summary style="font-size: 1.25rem; font-weight: bold;">Характеристика 5</summary>
-            <p>Грузоподъемность: 500 кг</p>
-            <img src="/images/viking_4_6/photo5.jpg" alt="Характеристика 5" class="img-fluid">
+            <summary style="font-size: 1.25rem; font-weight: bold;">Морская фурнитура</summary>
+            <p>Швартовочные утки</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 5" class="img-fluid-c" >
+
+            <p>Петли</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 5" class="img-fluid-c">
+
+            <p>Замки</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 5" class="img-fluid-c" >
+
+            <p>Подстаканники</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 5" class="img-fluid-c">
+          </details>
+        </li>
+        <li id="rich-item6">
+          <details>
+            <summary style="font-size: 1.25rem; font-weight: bold;">Сидения</summary>
+            <p>Что-то про сидения</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 6" class="img-fluid-c" >
+          </details>
+        </li>
+        <li id="rich-item7">
+          <details>
+            <summary style="font-size: 1.25rem; font-weight: bold;">Мягкие накладки на рундук</summary>
+            <p>Что-то про накладки</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 7" class="img-fluid-c" >
           </details>
         </li>
       </ul>
@@ -467,42 +576,137 @@
       <!-- Изображение лодки для рыбалки -->
       <img src="/images/viking_4_6/photo7.jpg" alt="Viking 4.6 F" class="img-fluid my-3">
       <!-- Список характеристик с раскрывающимися элементами -->
-      <ul>
-        <li>
+      <ul id="poor-package-list">
+        <li id="poor-item1">
           <details>
-            <summary style="font-size: 1.25rem; font-weight: bold;">Характеристика 1</summary>
-            <p>Длина наибольшая: 5,0 м</p>
-            <img src="/images/viking_4_6/photo4.jpg" alt="Характеристика 1" class="img-fluid">
+            <summary style="font-size: 1.25rem; font-weight: bold;">Корпус</summary>
+            <p>Морской алюминий 5083/АМг5 (алюминиево-магниевый сплав)</p>
+            <img src="/images/viking_4_6/f_pack/rp1.jpg" alt="Характеристика 1" class="img-fluid-c" >
+
+            <p>Порошковая краска корпуса металлик</p>
+            <img src="/images/viking_4_6/f_pack/rp2.jpg" alt="Характеристика 1" class="img-fluid-c">
+
+            <p>Палубное покрытие – влагостойкая фанера 12 мм, защищенные торцы</p>
+            <img src="/images/viking_4_6/f_pack/pp3.jpg" alt="Характеристика 1" class="img-fluid-c">
+
+            <p>Оригинальное каленое стекло в мощной алюминиевой раме</p>
+            <img src="/images/viking_4_6/f_pack/rp4.jpg" alt="Характеристика 1" class="img-fluid-c" >
+
+            <p>Привальный планширь с Т-пазом</p>
+            <img src="/images/viking_4_6/f_pack/rp5.jpg" alt="Характеристика 1" class="img-fluid-c">
+
+            <p>Площадка для Т-паза</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 1" class="img-fluid-c">
+
+            <p>Отделка бортов кокпита карпетом</p>
+            <img src="/images/viking_4_6/f_pack/pp6.jpg" alt="Характеристика 1" class="img-fluid-c" >
+
+            <p>Кормовой трапик</p>
+            <img src="/images/viking_4_6/f_pack/rp7.jpg" alt="Характеристика 1" class="img-fluid-c">
+
+            <p>Вентиляция</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 1" class="img-fluid-c">
+
+            <p>Осушительная система</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 1" class="img-fluid-c" >
+
+            <p>Покрытие ЭВА (6мм)</p>
+            <img src="/images/viking_4_6/f_pack/rp8.png" alt="Характеристика 1" class="img-fluid-c">
+
+            <p>Рундуки</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 1" class="img-fluid-c">
           </details>
         </li>
-        <li>
+        <li id="poor-item2">
           <details>
-            <summary style="font-size: 1.25rem; font-weight: bold;">Характеристика 2</summary>
-            <p>Материал корпуса: АМг5М</p>
-            <img src="/images/viking_4_6/photo5.jpg" alt="Характеристика 2" class="img-fluid">
+            <summary style="font-size: 1.25rem; font-weight: bold;">Рулевое</summary>
+            <p>Рулевой штурвал пять спиц, нержавеющая сталь
+            </p>
+            <img src="/images/viking_4_6/f_pack/pp7.jpg" alt="Характеристика 2" class="img-fluid-c" >
+
+            <p>Рулевая система: Редуктор, Трос</p>
+            <img src="/images/viking_4_6/f_pack/rp14.jpg" alt="Характеристика 2" class="img-fluid-c">
           </details>
         </li>
-        <li>
+        <li id="poor-item3">
           <details>
-            <summary style="font-size: 1.25rem; font-weight: bold;">Характеристика 3</summary>
-            <p>Максимальная скорость: 55 км/ч</p>
-            <img src="/images/viking_4_6/photo6.jpg" alt="Характеристика 3" class="img-fluid">
+            <summary style="font-size: 1.25rem; font-weight: bold;">Топливная система</summary>
+            <p>Топливный бак 55 литров</p>
+            <img src="/images/viking_4_6/f_pack/rp15.jpg" alt="Характеристика 3" class="img-fluid-c" >
+
+            <p>Датчик уровня топлива</p>
+            <img src="/images/viking_4_6/f_pack/rp16.jpg" alt="Характеристика 3" class="img-fluid-c">
+
+            <p>Указатель уровня топлива</p>
+            <img src="/images/viking_4_6/f_pack/rp17.jpg" alt="Характеристика 3" class="img-fluid-c" >
+
+            <p>Топливный фильтр-сепаратор</p>
+            <img src="/images/viking_4_6/f_pack/rp18.jpg" alt="Характеристика 3" class="img-fluid-c">
+
+            <p>Заливная горловина из нержавеющей стали</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 3" class="img-fluid-c" >
           </details>
         </li>
-        <li>
+        <li id="poor-item4">
           <details>
-            <summary style="font-size: 1.25rem; font-weight: bold;">Характеристика 4</summary>
-            <p>Пассажировместимость: 4 человека</p>
-            <img src="/images/viking_4_6/photo7.jpg" alt="Характеристика 4" class="img-fluid">
+            <summary style="font-size: 1.25rem; font-weight: bold;">Система электропитания</summary>
+            <p>Трюмная помпа</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 4" class="img-fluid-c" >
+
+            <p>Ходовые огни</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 4" class="img-fluid-c">
+
+            <p>Клотиковый огонь</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 4" class="img-fluid-c" >
+
+            <p>Звуковой сигнал (горн)</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 4" class="img-fluid-c">
+
+            <p>Аккумуляторная батарея</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 4" class="img-fluid-c" >
+
+            <p>Кнопки панели управления: 4</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 4" class="img-fluid-c" >
+
+            <p>Розетки электропитания в т.ч. USB:</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 4" class="img-fluid-c">
+
+            <p>Подсветка в кокпите:</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 4" class="img-fluid-c" >
           </details>
         </li>
-        <li>
+
+        <li id="poor-item5">
           <details>
-            <summary style="font-size: 1.25rem; font-weight: bold;">Характеристика 5</summary>
-            <p>Грузоподъемность: 400 кг</p>
-            <img src="/images/viking_4_6/photo8.jpg" alt="Характеристика 5" class="img-fluid">
+            <summary style="font-size: 1.25rem; font-weight: bold;">Морская фурнитура</summary>
+            <p>Швартовочные утки</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 5" class="img-fluid-c" >
+
+            <p>Петли</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 5" class="img-fluid-c">
+
+            <p>Замки</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 5" class="img-fluid-c" >
+
+            <p>Подстаканники: 2</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 5" class="img-fluid-c">
           </details>
         </li>
+        <li id="poor-item6">
+          <details>
+            <summary style="font-size: 1.25rem; font-weight: bold;">Сидения</summary>
+            <p>Что-то про сидения</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 6" class="img-fluid-c" >
+          </details>
+        </li>
+        <li id="poor-item7">
+          <details>
+            <summary style="font-size: 1.25rem; font-weight: bold;">Мягкие накладки на рундук</summary>
+            <p>Что-то про накладки</p>
+            <img src="/images/viking_4_6/f_pack/rp00.jpg" alt="Характеристика 7" class="img-fluid-c" >
+          </details>
+        </li>
+
       </ul>
       <p class="price_comp">Цена c мотором Toyama 1.200.000 руб.</p>
       <p class="price_comp">Цена c мотором Mercury 1.400.000 руб.</p>
@@ -591,7 +795,44 @@
     }
   });
 </script>
+<!--<script>-->
+<!--  document.addEventListener("DOMContentLoaded", function() {-->
+<!--    const richList = document.getElementById("rich-package-list");-->
+<!--    const poorList = document.getElementById("poor-package-list");-->
 
+<!--    // Слушатели событий для элементов "details"-->
+<!--    const syncDetails = (event, sourceList, targetList) => {-->
+<!--      if (event.target.tagName === "SUMMARY") {-->
+<!--        const sourceItemId = event.target.closest("li").id;-->
+<!--        const targetItem = document.querySelector(`#${targetList} #${sourceItemId.replace("rich", "poor")} details`);-->
+
+<!--        if (event.target.parentElement.open) {-->
+<!--          // Когда пункт открывается, открываем соответствующий пункт справа-->
+<!--          if (targetItem) {-->
+<!--            targetItem.open = true;-->
+<!--          }-->
+<!--        } else {-->
+<!--          // Когда пункт закрывается, закрываем соответствующий пункт справа-->
+<!--          if (targetItem) {-->
+<!--            targetItem.open = false;-->
+<!--          }-->
+<!--        }-->
+<!--      }-->
+<!--    };-->
+
+<!--    // Обработчик кликов для списка "rich-package-list"-->
+<!--    richList.addEventListener('click', function(event) {-->
+<!--      syncDetails(event, 'rich-package-list', 'poor-package-list');-->
+<!--    });-->
+
+<!--    // Обработчик кликов для списка "poor-package-list"-->
+<!--    poorList.addEventListener('click', function(event) {-->
+<!--      syncDetails(event, 'poor-package-list', 'rich-package-list');-->
+<!--    });-->
+<!--  });-->
+
+
+<!--</script>-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
 </body>
