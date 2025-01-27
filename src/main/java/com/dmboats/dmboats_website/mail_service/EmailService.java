@@ -21,6 +21,7 @@ public class EmailService {
             MimeMessage mimeMessage = mailSender.createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, false, "UTF-8");
 
+
             // Установка параметров письма
             helper.setFrom("dmboats_mail_service@mail.ru"); // Адрес отправителя
             helper.setTo("zgi1960@mail.ru"); // Адрес получателя
