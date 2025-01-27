@@ -23,7 +23,7 @@ public class EmailService {
 
             // Установка параметров письма
             helper.setFrom("dmboats_mail_service@mail.ru"); // Адрес отправителя
-            helper.setTo("andima70@gmail.com"); // Адрес получателя
+            helper.setTo("zgi1960@mail.ru"); // Адрес получателя
             helper.setSubject("Новая заявка на лодку Viking 4.6: " + contactForm.getService()); // Тема письма
 
             // Установка текста письма в HTML-формате
