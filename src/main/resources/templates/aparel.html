@@ -24,19 +24,43 @@
             height: 50px;
             margin-bottom: 15px;
         }
+        .hero-section {
+            text-align: center;
+            color: #fff;
+            padding: 50px 20px;
+            background-color: #333;
+        }
 
+        .hero-section img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
         /* Нижний блок */
         .footer {
             background-color: #333;
             color: #fff;
             padding: 20px;
+        }
+        .footer .links {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .footer .links a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 0.8rem;
             text-align: center;
         }
-
-        .footer a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
+        .footer .links img {
+            width: 60px;
+            height: 40px;
+            border-radius: 5px;
+        }
+        .footer .contact {
+            text-align: right;
         }
 
         header .header-menu {
@@ -86,7 +110,7 @@
         #photoCarousel .carousel-item img {
             width: 100%;       /* Ширина по всей ширине контейнера */
             height: 700px;     /* Устанавливаем фиксированную высоту */
-            object-fit: cover  ; /* Обрезаем изображение, чтобы оно заполнило контейнер */
+            object-fit: contain  ; /* Обрезаем изображение, чтобы оно заполнило контейнер */
         }
 
     </style>
@@ -94,54 +118,58 @@
 <body>
 
 <header class="border-bottom">
-    <div class="d-flex flex-wrap justify-content-between align-items-center py-3 container">
-        <ul class="nav me-auto">
-<!--            <li class="nav-item"><a href="/viking_4_1" class="nav-link px-2 link-dark">Viking 4.1 </a></li>-->
-            <li class="nav-item"><a href="/viking_4_6" class="nav-link px-2 link-dark">Viking 4.6 </a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">Лодки для работы </a></li>
+    <div class="container d-flex align-items-center py-3">
+        <!-- Левое меню -->
+        <ul class="nav header-menu d-flex flex-column flex-md-row align-items-center mb-2 mb-md-0">
+            <li class="nav-item"><a href="/viking_4_6" class="nav-link px-2 link-dark">Viking 4.6</a></li>
+            <li class="nav-item"><a href="/aparel" class="nav-link px-2 link-dark">Лодки для работы</a></li>
         </ul>
 
-        <a href="/" class="d-flex align-items-center text-decoration-none mx-auto logo">
-            <img src="/images/logo.png" alt="Viking Logo" width="320" height="50">
+        <!-- Логотип -->
+        <a href="/" class="d-flex align-items-center justify-content-center logo mb-2 mb-md-0">
+            <img src="/images/logo.png" alt="Viking Logo" class="img-fluid" style="max-width: 70%; height: auto;">
         </a>
 
-        <ul class="nav ms-auto">
-            <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">Новости</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 link-dark">Контакты</a></li>
+        <!-- Правое меню -->
+        <ul class="nav header-menu d-flex flex-column flex-md-row align-items-center">
+            <li class="nav-item"><a href="/news" class="nav-link px-2 link-dark">Галерея</a></li>
+            <li class="nav-item"><a href="/about" class="nav-link px-2 link-dark">Контакты</a></li>
         </ul>
     </div>
 </header>
 
-
-<!-- Карусель -->
-<div id="photoCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        <!-- Первый слайд -->
-        <div class="carousel-item active">
-            <img src="/images/aparel/photo1.jpg" class="d-block w-100" alt="Фото 1">
-        </div>
-        <!-- Второй слайд -->
-        <div class="carousel-item">
-            <img src="/images/aparel/photo2.jpg" class="d-block w-100" alt="Фото 2">
-        </div>
-        <!-- Третий слайд -->
-        <div class="carousel-item">
-            <img src="/images/aparel/photo3.jpg" class="d-block w-100" alt="Фото 3">
-        </div>
-        <div class="carousel-item">
-            <img src="/images/aparel/photo4.jpg" class="d-block w-100" alt="Фото 4">
-        </div>
-    </div>
-    <!-- Элементы управления каруселью -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#photoCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
+<section class="hero-section">
+    <img src="/images/aparel/photo2.jpg" alt="Главное изображение" class="img-fluid">
+</section>
+<!--&lt;!&ndash; Карусель &ndash;&gt;-->
+<!--<div id="photoCarousel" class="carousel slide" data-bs-ride="carousel">-->
+<!--    <div class="carousel-inner">-->
+<!--        &lt;!&ndash; Первый слайд &ndash;&gt;-->
+<!--        <div class="carousel-item active">-->
+<!--            <img src="/images/aparel/photo1.jpg" class="d-block w-100" alt="Фото 1">-->
+<!--        </div>-->
+<!--        &lt;!&ndash; Второй слайд &ndash;&gt;-->
+<!--        <div class="carousel-item">-->
+<!--            <img src="/images/aparel/photo2.jpg" class="d-block w-100" alt="Фото 2">-->
+<!--        </div>-->
+<!--        &lt;!&ndash; Третий слайд &ndash;&gt;-->
+<!--        <div class="carousel-item">-->
+<!--            <img src="/images/aparel/photo3.jpg" class="d-block w-100" alt="Фото 3">-->
+<!--        </div>-->
+<!--        <div class="carousel-item">-->
+<!--            <img src="/images/aparel/photo4.jpg" class="d-block w-100" alt="Фото 4">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; Элементы управления каруселью &ndash;&gt;-->
+<!--    <button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">-->
+<!--        <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+<!--        <span class="visually-hidden">Previous</span>-->
+<!--    </button>-->
+<!--    <button class="carousel-control-next" type="button" data-bs-target="#photoCarousel" data-bs-slide="next">-->
+<!--        <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+<!--        <span class="visually-hidden">Next</span>-->
+<!--    </button>-->
+<!--</div>-->
 
 
 <div class="container-fluid d-md-flex w-100 my-md-3 ps-md-3">
@@ -153,12 +181,7 @@
             <!-- Изображение лодки для отдыха -->
             <img src="/images/aparel/photo2.jpg" alt="Viking 4.6 BR" class="img-fluid my-3" style="border-radius: 15px; width: 100%; max-height: 300px; object-fit: cover;">
             <!-- Список особенностей -->
-            <ul class="text-start mx-auto" style="max-width: 80%;">
-                <li>достоинство 1</li>
-                <li>достоинство 2</li>
-                <li>достоинство 3</li>
 
-            </ul>
         </div>
     </div>
 
@@ -170,11 +193,6 @@
             <!-- Изображение лодки для рыбалки -->
             <img src="/images/aparel/photo3.jpg" alt="Viking 4.6 F" class="img-fluid my-3" style="border-radius: 15px; width: 100%; max-height: 300px; object-fit: cover;">
             <!-- Список особенностей -->
-            <ul class="text-start mx-auto" style="max-width: 80%;">
-                <li>достоинство 1</li>
-                <li>достоинство 2</li>
-                <li>достоинство 3</li>
-            </ul>
         </div>
     </div>
 </div>
@@ -183,13 +201,29 @@
 
 
 
-<!-- Нижний блок -->
 <footer class="footer">
-    <div>
-        <a href="#">Лодочные моторы</a> |
-        <a href="#">Лодочный сервис</a>
+    <div class="container d-flex justify-content-between align-items-center">
+        <!-- Левые плитки -->
+        <div class="links d-flex">
+            <a href="https://www.avito.ru/user/5319823908fac220704d44c2254e2af7/profile/all?id=5025578942&iid=5025578942&src=messenger&page_from=from_item_messenger&sellerId=5319823908fac220704d44c2254e2af7" target="_blank">
+                <img src="/images/avito_logo.png" alt="Avito">
+                <div>Avito</div>
+            </a>
+            <a href="https://www.youtube.com/@YamahaMoscow" target="_blank">
+                <img src="/images/youtube_logo.jpg" alt="YouTube">
+                <div>YouTube</div>
+            </a>
+            <a href="https://rutube.ru/channel/51949506/" target="_blank">
+                <img src="/images/rutube_logo.jpg" alt="RuTube">
+                <div>RuTube</div>
+            </a>
+        </div>
+
+        <!-- Номер телефона -->
+        <div class="contact">
+            <p>+7 (495) 66-434-66</p>
+        </div>
     </div>
-    <p>&copy; All Rights Reserved. Acme Design Co. <br> hello@mysite.com</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
